@@ -349,7 +349,6 @@ func ToSupi(suci string, privateKey string) (string, error) {
 	} else if scheme == profileCScheme {
 
 		return mccMnc + supiPrefix + suciPart[len(suciPart)-1], nil
-	}
 	} else { // NULL scheme
 		return supiPrefix + mccMnc + suciPart[len(suciPart)-1], nil
 	}
